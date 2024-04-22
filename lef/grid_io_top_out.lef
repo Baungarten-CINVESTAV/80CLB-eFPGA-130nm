@@ -1,0 +1,125 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO grid_io_top_out
+  CLASS BLOCK ;
+  FOREIGN grid_io_top_out ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 30.000 BY 55.000 ;
+  PIN bottom_width_0_height_0_subtile_0__pin_inpad_0_
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 26.000 34.040 30.000 34.640 ;
+    END
+  END bottom_width_0_height_0_subtile_0__pin_inpad_0_
+  PIN bottom_width_0_height_0_subtile_0__pin_outpad_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 26.000 47.640 30.000 48.240 ;
+    END
+  END bottom_width_0_height_0_subtile_0__pin_outpad_0_
+  PIN ccff_head
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 26.000 6.840 30.000 7.440 ;
+    END
+  END ccff_head
+  PIN ccff_tail
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 26.000 20.440 30.000 21.040 ;
+    END
+  END ccff_tail
+  PIN gfpga_pad_GPIO_PAD
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
+    PORT
+      LAYER met2 ;
+        RECT 14.810 51.000 15.090 55.000 ;
+    END
+  END gfpga_pad_GPIO_PAD
+  PIN prog_clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END prog_clk
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 7.075 10.640 8.675 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 11.790 10.640 13.390 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 16.505 10.640 18.105 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 21.220 10.640 22.820 43.760 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 9.430 10.640 11.030 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 14.145 10.640 15.745 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 18.860 10.640 20.460 43.760 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 23.575 10.640 25.175 43.760 ;
+    END
+  END vss
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 24.380 43.605 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 25.690 43.760 ;
+      LAYER met2 ;
+        RECT 7.105 50.720 14.530 51.410 ;
+        RECT 15.370 50.720 25.670 51.410 ;
+        RECT 7.105 6.955 25.670 50.720 ;
+      LAYER met3 ;
+        RECT 4.000 47.240 25.600 48.105 ;
+        RECT 4.000 41.840 26.000 47.240 ;
+        RECT 4.400 40.440 26.000 41.840 ;
+        RECT 4.000 35.040 26.000 40.440 ;
+        RECT 4.000 33.640 25.600 35.040 ;
+        RECT 4.000 21.440 26.000 33.640 ;
+        RECT 4.000 20.040 25.600 21.440 ;
+        RECT 4.000 7.840 26.000 20.040 ;
+        RECT 4.000 6.975 25.600 7.840 ;
+  END
+END grid_io_top_out
+END LIBRARY
+

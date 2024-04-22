@@ -1,13 +1,13 @@
 # SPDX-FileCopyrightText: 2020 Efabless Corporation
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
+# Licensed under the Apache License, Version 2.0 (the License);
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
+# distributed under the License is distributed on an AS IS BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
@@ -15,6 +15,61 @@
 
 # Caravel user project includes
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
 
- 
+// ------ Include user-defined netlists -----
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/dff.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/gpio.v
+
+// ------ Include primitive module netlists -----
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/inv_buf_passgate.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/arch_encoder.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/local_encoder.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/mux_primitives.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/muxes.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/luts.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/wires.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/memories.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/sub_module/shift_register_banks.v
+
+// ------ Include logic block netlists -----
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_io_mode_physical__iopad.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_io_mode_io_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__lut4.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__ff.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_clb_mode_default__fle.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/logical_tile_clb_mode_clb_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_top.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_right.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_bottom.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_left.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_top_out.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_right_out.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_bottom_out.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_io_left_out.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/lb/grid_clb.v
+
+// ------ Include routing module netlists -----
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_0__0_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_0__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_0__10_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_1__0_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_1__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_1__10_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_8__0_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_8__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/sb_8__10_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cbx_1__0_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cbx_1__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cbx_1__10_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cby_0__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cby_1__1_.v
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/routing/cby_8__1_.v
+
+// ------ Include tile module netlists -----
+
+// ------ Include fabric top-level netlists -----
+-v $(USER_PROJECT_VERILOG)/rtl/FPGA/fpga_top.v
+
+-v $(USER_PROJECT_VERILOG)/rtl/ioenb.v
+

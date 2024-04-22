@@ -15,12 +15,37 @@
 
 # Caravel user project includes	     
 -v $(USER_PROJECT_VERILOG)/gl/user_project_wrapper.v    
--v $(USER_PROJECT_VERILOG)/gl/user_proj_example.v
+
+-v $(USER_PROJECT_VERILOG)/gl/cbx_1__0_.v              
+-v $(USER_PROJECT_VERILOG)/gl/sb_0__1_.v        
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_left_out.v      
+-v $(USER_PROJECT_VERILOG)/gl/cbx_1__10_.v             
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_left.v          
+-v $(USER_PROJECT_VERILOG)/gl/sb_1__0_.v
+-v $(USER_PROJECT_VERILOG)/gl/cbx_1__1_.v              
+-v $(USER_PROJECT_VERILOG)/gl/sb_1__10_.v        
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_right_out.v     
+-v $(USER_PROJECT_VERILOG)/gl/cby_0__1_.v              
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_right.v         
+-v $(USER_PROJECT_VERILOG)/gl/sb_1__1_.v
+-v $(USER_PROJECT_VERILOG)/gl/cby_1__1_.v              
+-v $(USER_PROJECT_VERILOG)/gl/sb_8__0_.v    
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_top_out.v       
+-v $(USER_PROJECT_VERILOG)/gl/cby_8__1_.v              
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_top.v           
+-v $(USER_PROJECT_VERILOG)/gl/sb_8__10_.v
+-v $(USER_PROJECT_VERILOG)/gl/grid_clb.v               
+-v $(USER_PROJECT_VERILOG)/gl/ioenb.v                 
+-v $(USER_PROJECT_VERILOG)/gl/sb_8__1_.v         
+-v $(USER_PROJECT_VERILOG)/gl/sb_0__0_.v              
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_bottom_out.v     
+-v $(USER_PROJECT_VERILOG)/gl/grid_io_bottom.v         
+-v $(USER_PROJECT_VERILOG)/gl/sb_0__10_.v      
 
 -v $(USER_PROJECT_VERILOG)/gl/caravel_core.v
 
 # default should be added according to the defaults used
 
-#-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0403.v     
-#-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0801.v     
-#-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1803.v 
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0403.v     
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0801.v     
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1803.v 

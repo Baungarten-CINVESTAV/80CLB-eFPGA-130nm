@@ -1,0 +1,162 @@
+* NGSPICE file created from grid_io_bottom_out.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
+.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_ef_sc_hd__decap_12 abstract view
+.subckt sky130_ef_sc_hd__decap_12 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
+.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
+.subckt sky130_fd_sc_hd__fill_1 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_1 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_1 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__conb_1 abstract view
+.subckt sky130_fd_sc_hd__conb_1 VGND VNB VPB VPWR HI LO
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
+.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
+.subckt sky130_fd_sc_hd__decap_6 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dfxtp_1 abstract view
+.subckt sky130_fd_sc_hd__dfxtp_1 CLK D VGND VNB VPB VPWR Q
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
+.subckt sky130_fd_sc_hd__fill_2 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__buf_2 abstract view
+.subckt sky130_fd_sc_hd__buf_2 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_4 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_4 A VGND VNB VPB VPWR X
+.ends
+
+.subckt grid_io_bottom_out ccff_head ccff_tail gfpga_pad_GPIO_PAD prog_clk top_width_0_height_0_subtile_0__pin_inpad_0_
++ top_width_0_height_0_subtile_0__pin_outpad_0_ vdd vss
+XFILLER_0_0_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_9_27 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_6_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_9_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_13_24 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+XPHY_0 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_7_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XPHY_1 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_10_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_10_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_2 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_10_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_3 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_7_35 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_5_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_1_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XPHY_4 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_4_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_4_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_1_27 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_10_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_13_29 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_13_18 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_5 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_7_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_4_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_6 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_7_27 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_3_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+Xinput1 ccff_head vss vss vdd vdd net1 sky130_fd_sc_hd__clkbuf_1
+XPHY_7 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_4_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+Xinput2 top_width_0_height_0_subtile_0__pin_outpad_0_ vss vss vdd vdd net2 sky130_fd_sc_hd__clkbuf_1
+Xgrid_io_bottom_out_5 vss vss vdd vdd grid_io_bottom_out_5/HI top_width_0_height_0_subtile_0__pin_inpad_0_
++ sky130_fd_sc_hd__conb_1
+XPHY_8 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_11_21 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_9 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_1_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XTAP_30 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_10_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_11_15 vss vss vdd vdd sky130_fd_sc_hd__decap_6
+XTAP_31 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_2_ net2 vss vss vdd vdd net4 sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_5_35 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XTAP_32 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_2_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_2_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XTAP_33 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_0_ prog_clk net1 vss vss vdd vdd net3 sky130_fd_sc_hd__dfxtp_1
+XFILLER_0_5_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_8_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XTAP_34 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_2_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_8_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_8_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_5_27 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XTAP_35 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_8_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_2_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XPHY_20 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_10 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_6_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XPHY_21 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_8_29 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XPHY_11 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_22 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_32 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XTAP_28 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_12 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_23 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XTAP_29 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_4_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XPHY_13 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_24 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_14 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_25 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_15 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_26 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_27 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_2_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XPHY_16 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_3_35 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_17 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xoutput3 net3 vss vss vdd vdd ccff_tail sky130_fd_sc_hd__buf_2
+XFILLER_0_0_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_0_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_9_35 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+Xoutput4 net4 vss vss vdd vdd gfpga_pad_GPIO_PAD sky130_fd_sc_hd__clkbuf_4
+XPHY_18 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_3_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_0_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_6_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_6_37 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_19 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_13_6 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_3_27 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XFILLER_0_11_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_0_3 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_9_15 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_6_27 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+.ends
+

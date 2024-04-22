@@ -1,0 +1,410 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ioenb
+  CLASS BLOCK ;
+  FOREIGN ioenb ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 200.000 BY 60.000 ;
+  PIN io_oeb[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 67.710 0.000 67.990 4.000 ;
+    END
+  END io_oeb[0]
+  PIN io_oeb[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END io_oeb[10]
+  PIN io_oeb[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.510 56.000 35.790 60.000 ;
+    END
+  END io_oeb[11]
+  PIN io_oeb[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 170.750 56.000 171.030 60.000 ;
+    END
+  END io_oeb[12]
+  PIN io_oeb[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 144.990 56.000 145.270 60.000 ;
+    END
+  END io_oeb[13]
+  PIN io_oeb[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.870 56.000 158.150 60.000 ;
+    END
+  END io_oeb[14]
+  PIN io_oeb[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 90.250 56.000 90.530 60.000 ;
+    END
+  END io_oeb[15]
+  PIN io_oeb[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 119.230 0.000 119.510 4.000 ;
+    END
+  END io_oeb[16]
+  PIN io_oeb[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 106.350 0.000 106.630 4.000 ;
+    END
+  END io_oeb[17]
+  PIN io_oeb[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 56.000 22.910 60.000 ;
+    END
+  END io_oeb[18]
+  PIN io_oeb[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 17.040 200.000 17.640 ;
+    END
+  END io_oeb[19]
+  PIN io_oeb[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 103.130 56.000 103.410 60.000 ;
+    END
+  END io_oeb[1]
+  PIN io_oeb[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 56.000 48.670 60.000 ;
+    END
+  END io_oeb[20]
+  PIN io_oeb[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 56.000 10.030 60.000 ;
+    END
+  END io_oeb[21]
+  PIN io_oeb[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.330 0.000 135.610 4.000 ;
+    END
+  END io_oeb[22]
+  PIN io_oeb[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 3.440 200.000 4.040 ;
+    END
+  END io_oeb[23]
+  PIN io_oeb[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 30.640 200.000 31.240 ;
+    END
+  END io_oeb[24]
+  PIN io_oeb[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END io_oeb[25]
+  PIN io_oeb[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 77.370 56.000 77.650 60.000 ;
+    END
+  END io_oeb[26]
+  PIN io_oeb[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 13.640 4.000 14.240 ;
+    END
+  END io_oeb[27]
+  PIN io_oeb[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 38.730 0.000 39.010 4.000 ;
+    END
+  END io_oeb[28]
+  PIN io_oeb[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.970 0.000 174.250 4.000 ;
+    END
+  END io_oeb[29]
+  PIN io_oeb[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.470 0.000 93.750 4.000 ;
+    END
+  END io_oeb[2]
+  PIN io_oeb[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 183.630 56.000 183.910 60.000 ;
+    END
+  END io_oeb[30]
+  PIN io_oeb[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.210 0.000 148.490 4.000 ;
+    END
+  END io_oeb[31]
+  PIN io_oeb[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 4.000 ;
+    END
+  END io_oeb[32]
+  PIN io_oeb[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END io_oeb[33]
+  PIN io_oeb[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END io_oeb[34]
+  PIN io_oeb[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 161.090 0.000 161.370 4.000 ;
+    END
+  END io_oeb[35]
+  PIN io_oeb[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 0.000 51.890 4.000 ;
+    END
+  END io_oeb[36]
+  PIN io_oeb[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 196.000 44.240 200.000 44.840 ;
+    END
+  END io_oeb[37]
+  PIN io_oeb[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.510 56.000 196.790 60.000 ;
+    END
+  END io_oeb[3]
+  PIN io_oeb[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.010 56.000 116.290 60.000 ;
+    END
+  END io_oeb[4]
+  PIN io_oeb[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 128.890 56.000 129.170 60.000 ;
+    END
+  END io_oeb[5]
+  PIN io_oeb[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.590 0.000 80.870 4.000 ;
+    END
+  END io_oeb[6]
+  PIN io_oeb[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 54.440 4.000 55.040 ;
+    END
+  END io_oeb[7]
+  PIN io_oeb[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.270 56.000 61.550 60.000 ;
+    END
+  END io_oeb[8]
+  PIN io_oeb[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 186.850 0.000 187.130 4.000 ;
+    END
+  END io_oeb[9]
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 28.295 10.640 29.895 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 75.445 10.640 77.045 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 122.595 10.640 124.195 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 169.745 10.640 171.345 49.200 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 51.870 10.640 53.470 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 99.020 10.640 100.620 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 146.170 10.640 147.770 49.200 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 193.320 10.640 194.920 49.200 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 194.120 49.045 ;
+      LAYER met1 ;
+        RECT 1.450 10.640 194.920 49.200 ;
+      LAYER met2 ;
+        RECT 0.160 55.720 9.470 56.170 ;
+        RECT 10.310 55.720 22.350 56.170 ;
+        RECT 23.190 55.720 35.230 56.170 ;
+        RECT 36.070 55.720 48.110 56.170 ;
+        RECT 48.950 55.720 60.990 56.170 ;
+        RECT 61.830 55.720 77.090 56.170 ;
+        RECT 77.930 55.720 89.970 56.170 ;
+        RECT 90.810 55.720 102.850 56.170 ;
+        RECT 103.690 55.720 115.730 56.170 ;
+        RECT 116.570 55.720 128.610 56.170 ;
+        RECT 129.450 55.720 144.710 56.170 ;
+        RECT 145.550 55.720 157.590 56.170 ;
+        RECT 158.430 55.720 170.470 56.170 ;
+        RECT 171.310 55.720 183.350 56.170 ;
+        RECT 184.190 55.720 196.230 56.170 ;
+        RECT 0.160 4.280 196.720 55.720 ;
+        RECT 0.650 3.555 12.690 4.280 ;
+        RECT 13.530 3.555 25.570 4.280 ;
+        RECT 26.410 3.555 38.450 4.280 ;
+        RECT 39.290 3.555 51.330 4.280 ;
+        RECT 52.170 3.555 67.430 4.280 ;
+        RECT 68.270 3.555 80.310 4.280 ;
+        RECT 81.150 3.555 93.190 4.280 ;
+        RECT 94.030 3.555 106.070 4.280 ;
+        RECT 106.910 3.555 118.950 4.280 ;
+        RECT 119.790 3.555 135.050 4.280 ;
+        RECT 135.890 3.555 147.930 4.280 ;
+        RECT 148.770 3.555 160.810 4.280 ;
+        RECT 161.650 3.555 173.690 4.280 ;
+        RECT 174.530 3.555 186.570 4.280 ;
+        RECT 187.410 3.555 196.720 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 54.040 196.000 54.905 ;
+        RECT 4.000 45.240 196.000 54.040 ;
+        RECT 4.000 43.840 195.600 45.240 ;
+        RECT 4.000 41.840 196.000 43.840 ;
+        RECT 4.400 40.440 196.000 41.840 ;
+        RECT 4.000 31.640 196.000 40.440 ;
+        RECT 4.000 30.240 195.600 31.640 ;
+        RECT 4.000 28.240 196.000 30.240 ;
+        RECT 4.400 26.840 196.000 28.240 ;
+        RECT 4.000 18.040 196.000 26.840 ;
+        RECT 4.000 16.640 195.600 18.040 ;
+        RECT 4.000 14.640 196.000 16.640 ;
+        RECT 4.400 13.240 196.000 14.640 ;
+        RECT 4.000 4.440 196.000 13.240 ;
+        RECT 4.000 3.575 195.600 4.440 ;
+  END
+END ioenb
+END LIBRARY
+

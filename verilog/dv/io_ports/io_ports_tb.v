@@ -26,14 +26,9 @@ module io_ports_tb;
 
 	wire gpio;
 	wire [37:0] mprj_io;
-	wire [7:0] mprj_io_0;
 
-	assign mprj_io_0 = mprj_io[7:0];
-	// assign mprj_io_0 = {mprj_io[8:4],mprj_io[2:0]};
-
-	assign mprj_io[3] = (CSB == 1'b1) ? 1'b1 : 1'bz;
-	// assign mprj_io[3] = 1'b1;
-
+	wire signal_test,signal_test_NC;
+	assign signal_test = 1'b1;
 	// External clock is used by default.  Make this artificially fast for the
 	// simulation.  Normally this would be a slow clock and the digital PLL
 	// would be the fast clock.
@@ -140,47 +135,363 @@ module io_ports_tb;
 		end
 	`endif 
 
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	
+// ----- Local wires for global ports of FPGA fabric -----
+wire [0:0] prog_clk;
+wire [0:0] set;
+wire [0:0] reset;
+wire [0:0] clk;
+
+// ----- Local wires for I/Os of FPGA fabric -----
+wire [35:0] gfpga_pad_GPIO_PAD;
+
+
+
+reg [0:0] __config_done__;
+wire [0:0] __config_all_done__;
+wire [0:0] __prog_clock__;
+reg [0:0] __prog_clock___reg__;
+wire [0:0] __op_clock__;
+reg [0:0] __op_clock___reg__;
+reg [0:0] __prog_reset__;
+reg [0:0] __prog_set_;
+reg [0:0] __greset__;
+reg [0:0] __gset__;
+// ---- Configuration-chain head -----
+reg [0:0] ccff_head;
+// ---- Configuration-chain tail -----
+wire [0:0] ccff_tail;
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// ----- Shared inputs -------
+	reg [0:0] a_shared_input;
+	reg [0:0] b_shared_input;
+
+// ----- FPGA fabric outputs -------
+	wire [0:0] y_fpga;
+
+// ----- Benchmark outputs -------
+	wire [0:0] y_benchmark;
+
+// ----- Output vectors checking flags -------
+	reg [0:0] y_flag;
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// ----- Error counter: Deposit an error for config_done signal is not raised at the beginning -----
+	integer nb_error= 1;
+// ----- Number of clock cycles in configuration phase: 17075 -----
+// ----- Begin configuration done signal generation -----
+initial
+	begin
+			#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__config_done__[0] = 1'b0;
+	end
+
+// ----- End configuration done signal generation -----
+
+// ----- Begin raw programming clock signal generation -----
+initial
+	begin
+			#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__prog_clock___reg__[0] = 1'b0;
+	end
+always
+	begin
+		#5	__prog_clock___reg__[0] = ~__prog_clock___reg__[0];
+	end
+
+// ----- End raw programming clock signal generation -----
+
+// ----- Actual programming clock is triggered only when __config_done__ and __prog_reset__ are disabled -----
+	assign __prog_clock__[0] = __prog_clock___reg__[0] & (~__config_done__[0]) & (~__prog_reset__[0]);
+
+	assign __config_all_done__[0] = __config_done__[0];
+// ----- Begin raw operating clock signal generation -----
+initial
+	begin
+			#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__op_clock___reg__[0] = 1'b0;
+	end
+always wait(~__greset__)
+	begin
+		#1.314593911	__op_clock___reg__[0] = ~__op_clock___reg__[0];
+	end
+
+// ----- End raw operating clock signal generation -----
+// ----- Actual operating clock is triggered only when __config_all_done__ is enabled -----
+	assign __op_clock__[0] = __op_clock___reg__[0] & __config_all_done__[0];
+
+// ----- Begin programming reset signal generation -----
+initial
+	begin
+			#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__prog_reset__[0] = 1'b1;
+	#10	__prog_reset__[0] = 1'b0;
+	end
+
+// ----- End programming reset signal generation -----
+
+// ----- Begin programming set signal generation -----
+initial
+	begin
+	#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__prog_set_[0] = 1'b1;
+	#10	__prog_set_[0] = 1'b0;
+	end
+
+// ----- End programming set signal generation -----
+
+// ----- Begin operating reset signal generation -----
+// ----- Reset signal is enabled until the first clock cycle in operation phase -----
+initial
+	begin
+			#50;
+	while (power4 == 0) begin
+		#20;
+	end
+		__greset__[0] = 1'b1;
+	wait(__config_all_done__)
+	#2.629187822	__greset__[0] = 1'b1;
+	#5.258375645	__greset__[0] = 1'b0;
+	end
+
+// ----- End operating reset signal generation -----
+// ----- Begin operating set signal generation: always disabled -----
+initial
+begin
+	#50;
+	while (power4 == 0) begin
+		#20;
+	end
+	
+		__gset__[0] = 1'b0;
+	
+end
+// ----- End operating set signal generation: always disabled -----
+
+// ----- Begin connecting global ports of FPGA fabric to stimuli -----
+	assign clk[0] = __op_clock__[0];
+	assign prog_clk[0] = __prog_clock__[0];
+	assign reset[0] = __greset__[0];
+	assign set[0] = __gset__[0];
+// ----- End connecting global ports of FPGA fabric to stimuli -----
+// ----- FPGA top-level module to be capsulated -----
+	/*fpga_top FPGA_DUT (
+		.prog_clk(prog_clk[0]),
+		.set(set[0]),
+		.reset(reset[0]),
+		.clk(clk[0]),
+		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[0:35]),
+		.ccff_head(ccff_head[0]),
+		.ccff_tail(ccff_tail[0]));
+*/
+assign mprj_io[37] = clk[0];
+assign mprj_io[36] = prog_clk[0];
+assign mprj_io[34] = set[0];
+assign mprj_io[35] = reset[0];
+assign gfpga_pad_GPIO_PAD[19:13] = {mprj_io[5],mprj_io[6],mprj_io[7],mprj_io[8],mprj_io[9],mprj_io[10],mprj_io[11]};
+
+assign gfpga_pad_GPIO_PAD[12:3] = {mprj_io[14],mprj_io[15],mprj_io[16],mprj_io[17],mprj_io[18],mprj_io[19],mprj_io[20],mprj_io[21],mprj_io[22],mprj_io[23]};
+
+assign {mprj_io[24],mprj_io[25],mprj_io[26]} = gfpga_pad_GPIO_PAD[2:0];
+assign {mprj_io[27],mprj_io[28],mprj_io[29],mprj_io[30],mprj_io[31],mprj_io[32],mprj_io[33]}= gfpga_pad_GPIO_PAD[35:29];
+
+
+assign mprj_io[12]  = ccff_head[0];
+assign ccff_tail[0] = mprj_io[13]; 
+
+
+
+// ----- Link BLIF Benchmark I/Os to FPGA I/Os -----
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// ----- Blif Benchmark input a is mapped to FPGA IOPAD gfpga_pad_GPIO_PAD[0] -----
+	assign gfpga_pad_GPIO_PAD[0] = a_shared_input[0];
+
+// ----- Blif Benchmark input b is mapped to FPGA IOPAD gfpga_pad_GPIO_PAD[1] -----
+	assign gfpga_pad_GPIO_PAD[1] = b_shared_input[0];
+
+// ----- Blif Benchmark output y is mapped to FPGA IOPAD gfpga_pad_GPIO_PAD[3] -----
+	assign y_fpga[0] = gfpga_pad_GPIO_PAD[3];
+
+// ----- Wire unused FPGA I/Os to constants -----
+	assign gfpga_pad_GPIO_PAD[2] = 1'b0;
+	/*
+	assign gfpga_pad_GPIO_PAD[4] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[5] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[6] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[7] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[8] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[9] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[10] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[11] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[12] = 1'b0;*/
+	/*assign gfpga_pad_GPIO_PAD[13] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[14] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[15] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[16] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[17] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[18] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[19] = 1'b0;*/
+
+	assign gfpga_pad_GPIO_PAD[20] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[21] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[22] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[23] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[24] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[25] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[26] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[27] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[28] = 1'b0;
+
+	assign gfpga_pad_GPIO_PAD[29] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[30] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[31] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[32] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[33] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[34] = 1'b0;
+	assign gfpga_pad_GPIO_PAD[35] = 1'b0;
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// ----- End reference Benchmark Instanication -------
+
+// ----- Begin bitstream loading during configuration phase -----
+`define BITSTREAM_LENGTH 17074
+`define BITSTREAM_WIDTH 1
+// ----- Virtual memory to store the bitstream from external file -----
+reg [0:`BITSTREAM_WIDTH - 1] bit_mem[0:`BITSTREAM_LENGTH - 1];
+reg [$clog2(`BITSTREAM_LENGTH):0] bit_index;
+// ----- Registers used for fast configuration logic -----
+reg [$clog2(`BITSTREAM_LENGTH):0] ibit;
+reg [0:0] skip_bits;
+// ----- Preload bitstream file to a virtual memory -----
+initial begin
+	#50;
+	while (power4 == 0) begin
+		#20;
+	end
+	$readmemb("fabric_bitstream.bit", bit_mem);
+// ----- Configuration chain default input -----
+	ccff_head[0] <= 1'b0;
+	bit_index <= 0;
+	skip_bits[0] <= 1'b0;
+	for (ibit = 0; ibit < `BITSTREAM_LENGTH + 1; ibit = ibit + 1) begin
+		if (1'b0 == bit_mem[ibit]) begin
+			if (1'b1 == skip_bits[0]) begin
+				bit_index <= bit_index + 1;
+			end
+		end else begin
+			skip_bits[0] <= 1'b0;
+		end
+	end
+end
+// ----- 'else if' condition is required by Modelsim to synthesis the Verilog correctly -----
+always @(negedge __prog_clock___reg__[0]) begin
+	if (bit_index >= `BITSTREAM_LENGTH) begin
+		__config_done__[0] <= 1'b1;
+	end else if (bit_index >= 0 && bit_index < `BITSTREAM_LENGTH) begin
+		ccff_head[0] <= bit_mem[bit_index];
+		bit_index <= bit_index + 1;
+	end
+end
+
+	initial begin
+		a_shared_input <= 1'b0;
+		b_shared_input <= 1'b0;
+
+		y_flag[0] <= 1'b0;
+	end
+
+// ----- Input Stimulus -------
+	always@(negedge __op_clock__[0]) begin
+		a_shared_input <= $random;
+		b_shared_input <= $random;
+	end
+
+// ----- Begin checking output vectors -------
+// ----- Skip the first falling edge of clock, it is for initialization -------
+	reg [0:0] sim_start;
+
+
+
+// ----- Configuration done must be raised in the end -------
+	always@(posedge __config_all_done__[0]) begin
+		nb_error = nb_error - 1;
+	end
+
+// ----- END output waveform to VCD file -------
+
+initial begin
+		#50;
+	sim_start[0] <= 1'b0;
+	while (power4 == 0) begin
+		#20;
+	end
+	sim_start[0] <= 1'b1;
+	$timeformat(-9, 2, "ns", 20);
+	$display("Simulation start");
+// ----- Can be changed by the user for his/her need -------
+
+	// Repeat cycles of 1000 clock edges as needed to complete testbench
+	repeat (35) begin
+		repeat (1000) @(posedge clock);
+		// $display("+1000 cycles");
+	end
+
+	if(nb_error == 0) begin
+		$display("Simulation Succeed");
+	end else begin
+		$display("Simulation Failed with %d error(s)", nb_error);
+	end
+	$finish;
+end
+
+
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	///////////////////////////	FPGA TEST	///////////////////////////////////////////
+	
+
+
 	initial begin
 		$dumpfile("io_ports.vcd");
 		$dumpvars(0, io_ports_tb);
 
-		// Repeat cycles of 1000 clock edges as needed to complete testbench
-		repeat (25) begin
-			repeat (1000) @(posedge clock);
-			// $display("+1000 cycles");
-		end
-		$display("%c[1;31m",27);
-		`ifdef GL
-			$display ("Monitor: Timeout, Test Mega-Project IO Ports (GL) Failed");
-		`else
-			$display ("Monitor: Timeout, Test Mega-Project IO Ports (RTL) Failed");
-		`endif
-		$display("%c[0m",27);
-		$finish;
 	end
 
-	initial begin
-	    // Observe Output pins [7:0]
-		wait(mprj_io_0 == 8'h01);
-		wait(mprj_io_0 == 8'h02);
-		wait(mprj_io_0 == 8'h03);
-		wait(mprj_io_0 == 8'h04);
-		wait(mprj_io_0 == 8'h05);
-		wait(mprj_io_0 == 8'h06);
-		wait(mprj_io_0 == 8'h07);
-		wait(mprj_io_0 == 8'h08);
-		wait(mprj_io_0 == 8'h09);
-		wait(mprj_io_0 == 8'h0A);   
-		wait(mprj_io_0 == 8'hFF);
-		wait(mprj_io_0 == 8'h00);
-		
-		`ifdef GL
-	    	$display("Monitor: Test 1 Mega-Project IO (GL) Passed");
-		`else
-		    $display("Monitor: Test 1 Mega-Project IO (RTL) Passed");
-		`endif
-	    $finish;
-	end
+
 
 	initial begin
 		RSTB <= 1'b0;
@@ -204,10 +515,6 @@ module io_ports_tb;
 		power3 <= 1'b1;
 		#100;
 		power4 <= 1'b1;
-	end
-
-	always @(mprj_io) begin
-		#1 $display("MPRJ-IO state = %b ", mprj_io[7:0]);
 	end
 
 	wire flash_csb;

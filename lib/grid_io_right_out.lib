@@ -1,0 +1,113 @@
+library (grid_io_right_out) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00146,  0.00429,  0.01257,  0.03681,  0.10783,  0.31587");
+  }
+
+  cell ("grid_io_right_out") {
+    pin("ccff_head") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "prog_clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.11292");
+	}
+	fall_constraint(scalar) {
+          values("-0.11999");
+	}
+      }
+      timing() {
+        related_pin : "prog_clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.13610");
+	}
+	fall_constraint(scalar) {
+          values("0.17686");
+	}
+      }
+    }
+    pin("ccff_tail") {
+      direction : output;
+      capacitance : 0.0010;
+      timing() {
+        related_pin : "prog_clk";
+        timing_type : rising_edge;
+	cell_rise(template_1) {
+          values("0.41684,0.42120,0.43248,0.45994,0.53301,0.75732,1.46777");
+	}
+	rise_transition(template_1) {
+          values("0.02224,0.02551,0.03527,0.06457,0.16177,0.48312,1.50732");
+	}
+	cell_fall(template_1) {
+          values("0.41133,0.41525,0.42537,0.44854,0.50276,0.65484,1.13415");
+	}
+	fall_transition(template_1) {
+          values("0.02060,0.02324,0.03048,0.05004,0.10921,0.30689,0.95361");
+	}
+      }
+    }
+    pin("gfpga_pad_GPIO_PAD") {
+      direction : output;
+      capacitance : 0.0010;
+      timing() {
+        related_pin : "left_width_0_height_0_subtile_0__pin_outpad_0_";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("0.24922,0.25421,0.26626,0.29572,0.37620,0.60942,1.29407");
+	}
+	rise_transition(template_1) {
+          values("0.01732,0.02173,0.03421,0.07132,0.18446,0.52117,1.50694");
+	}
+	cell_fall(template_1) {
+          values("0.25363,0.25824,0.26853,0.28948,0.33490,0.45100,0.78523");
+	}
+	fall_transition(template_1) {
+          values("0.01762,0.02070,0.02791,0.04582,0.09404,0.24283,0.69549");
+	}
+      }
+    }
+    pin("left_width_0_height_0_subtile_0__pin_inpad_0_") {
+      direction : output;
+      capacitance : 0.0006;
+    }
+    pin("left_width_0_height_0_subtile_0__pin_outpad_0_") {
+      direction : input;
+      capacitance : 0.0029;
+    }
+    pin("prog_clk") {
+      direction : input;
+      capacitance : 0.0040;
+    }
+  }
+
+}

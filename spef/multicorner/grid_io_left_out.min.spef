@@ -1,0 +1,299 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "grid_io_left_out"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 ccff_head
+*2 ccff_tail
+*3 gfpga_pad_GPIO_PAD
+*4 prog_clk
+*5 net5
+*6 right_width_0_height_0_subtile_0__pin_outpad_0_
+*9 net1
+*10 net2
+*11 net3
+*12 net4
+*13 FILLER_0_0_15
+*14 FILLER_0_0_27
+*15 FILLER_0_0_29
+*16 FILLER_0_0_3
+*17 FILLER_0_10_15
+*18 FILLER_0_10_27
+*19 FILLER_0_10_29
+*20 FILLER_0_10_3
+*21 FILLER_0_10_37
+*22 FILLER_0_11_15
+*23 FILLER_0_11_27
+*24 FILLER_0_11_3
+*25 FILLER_0_11_35
+*26 FILLER_0_12_15
+*27 FILLER_0_12_27
+*28 FILLER_0_12_29
+*29 FILLER_0_12_3
+*30 FILLER_0_12_37
+*31 FILLER_0_13_15
+*32 FILLER_0_13_27
+*33 FILLER_0_13_3
+*34 FILLER_0_13_35
+*35 FILLER_0_14_15
+*36 FILLER_0_14_27
+*37 FILLER_0_14_29
+*38 FILLER_0_14_3
+*39 FILLER_0_15_15
+*40 FILLER_0_15_27
+*41 FILLER_0_15_3
+*42 FILLER_0_15_35
+*43 FILLER_0_16_15
+*44 FILLER_0_16_27
+*45 FILLER_0_16_29
+*46 FILLER_0_16_3
+*47 FILLER_0_16_37
+*48 FILLER_0_17_15
+*49 FILLER_0_17_27
+*50 FILLER_0_17_3
+*51 FILLER_0_17_35
+*52 FILLER_0_18_15
+*53 FILLER_0_18_27
+*54 FILLER_0_18_29
+*55 FILLER_0_18_3
+*56 FILLER_0_18_37
+*57 FILLER_0_19_15
+*58 FILLER_0_19_22
+*59 FILLER_0_19_3
+*60 FILLER_0_19_34
+*61 FILLER_0_1_15
+*62 FILLER_0_1_27
+*63 FILLER_0_1_3
+*64 FILLER_0_1_35
+*65 FILLER_0_20_21
+*66 FILLER_0_20_27
+*67 FILLER_0_20_29
+*68 FILLER_0_20_9
+*69 FILLER_0_2_15
+*70 FILLER_0_2_27
+*71 FILLER_0_2_29
+*72 FILLER_0_2_3
+*73 FILLER_0_2_37
+*74 FILLER_0_3_15
+*75 FILLER_0_3_27
+*76 FILLER_0_3_3
+*77 FILLER_0_3_35
+*78 FILLER_0_4_15
+*79 FILLER_0_4_27
+*80 FILLER_0_4_29
+*81 FILLER_0_4_3
+*82 FILLER_0_4_37
+*83 FILLER_0_5_15
+*84 FILLER_0_5_27
+*85 FILLER_0_5_3
+*86 FILLER_0_5_35
+*87 FILLER_0_6_15
+*88 FILLER_0_6_27
+*89 FILLER_0_6_29
+*90 FILLER_0_6_3
+*91 FILLER_0_6_33
+*92 FILLER_0_7_15
+*93 FILLER_0_7_21
+*94 FILLER_0_7_3
+*95 FILLER_0_8_15
+*96 FILLER_0_8_27
+*97 FILLER_0_8_29
+*98 FILLER_0_8_3
+*99 FILLER_0_8_37
+*100 FILLER_0_9_15
+*101 FILLER_0_9_27
+*102 FILLER_0_9_3
+*103 FILLER_0_9_35
+*104 PHY_0
+*105 PHY_1
+*106 PHY_10
+*107 PHY_11
+*108 PHY_12
+*109 PHY_13
+*110 PHY_14
+*111 PHY_15
+*112 PHY_16
+*113 PHY_17
+*114 PHY_18
+*115 PHY_19
+*116 PHY_2
+*117 PHY_20
+*118 PHY_21
+*119 PHY_22
+*120 PHY_23
+*121 PHY_24
+*122 PHY_25
+*123 PHY_26
+*124 PHY_27
+*125 PHY_28
+*126 PHY_29
+*127 PHY_3
+*128 PHY_30
+*129 PHY_31
+*130 PHY_32
+*131 PHY_33
+*132 PHY_34
+*133 PHY_35
+*134 PHY_36
+*135 PHY_37
+*136 PHY_38
+*137 PHY_39
+*138 PHY_4
+*139 PHY_40
+*140 PHY_41
+*141 PHY_5
+*142 PHY_6
+*143 PHY_7
+*144 PHY_8
+*145 PHY_9
+*146 TAP_42
+*147 TAP_43
+*148 TAP_44
+*149 TAP_45
+*150 TAP_46
+*151 TAP_47
+*152 TAP_48
+*153 TAP_49
+*154 TAP_50
+*155 TAP_51
+*156 TAP_52
+*157 _0_
+*158 _2_
+*159 grid_io_left_out_5
+*160 input1
+*161 input2
+*162 output3
+*163 output4
+
+*PORTS
+ccff_head I
+ccff_tail O
+gfpga_pad_GPIO_PAD O
+prog_clk I
+right_width_0_height_0_subtile_0__pin_inpad_0_ O
+right_width_0_height_0_subtile_0__pin_outpad_0_ I
+
+*D_NET *1 0.000762375
+*CONN
+*P ccff_head I
+*I *160:A I *D sky130_fd_sc_hd__clkbuf_1
+*CAP
+1 ccff_head 0.000381188
+2 *160:A 0.000381188
+*RES
+1 ccff_head *160:A 6.72723 
+*END
+
+*D_NET *2 0.000787788
+*CONN
+*P ccff_tail O
+*I *162:X O *D sky130_fd_sc_hd__buf_2
+*CAP
+1 ccff_tail 0.000370287
+2 *162:X 0.000370287
+3 ccff_tail *162:A 4.72134e-05
+*RES
+1 *162:X ccff_tail 6.9537 
+*END
+
+*D_NET *3 0.000486467
+*CONN
+*P gfpga_pad_GPIO_PAD O
+*I *163:X O *D sky130_fd_sc_hd__clkbuf_4
+*CAP
+1 gfpga_pad_GPIO_PAD 0.000243233
+2 *163:X 0.000243233
+3 gfpga_pad_GPIO_PAD *163:A 0
+*RES
+1 *163:X gfpga_pad_GPIO_PAD 5.10177 
+*END
+
+*D_NET *4 0.00224977
+*CONN
+*P prog_clk I
+*I *157:CLK I *D sky130_fd_sc_hd__dfxtp_1
+*CAP
+1 prog_clk 0.00112489
+2 *157:CLK 0.00112489
+*RES
+1 prog_clk *157:CLK 16.4798 
+*END
+
+*D_NET *5 0.00086138
+*CONN
+*P right_width_0_height_0_subtile_0__pin_inpad_0_ O
+*I *159:LO O *D sky130_fd_sc_hd__conb_1
+*CAP
+1 right_width_0_height_0_subtile_0__pin_inpad_0_ 0.00043069
+2 *159:LO 0.00043069
+*RES
+1 *159:LO right_width_0_height_0_subtile_0__pin_inpad_0_ 5.7303 
+*END
+
+*D_NET *6 0.000633293
+*CONN
+*P right_width_0_height_0_subtile_0__pin_outpad_0_ I
+*I *161:A I *D sky130_fd_sc_hd__clkbuf_1
+*CAP
+1 right_width_0_height_0_subtile_0__pin_outpad_0_ 0.000316646
+2 *161:A 0.000316646
+*RES
+1 right_width_0_height_0_subtile_0__pin_outpad_0_ *161:A 7.31543 
+*END
+
+*D_NET *9 0.00228677
+*CONN
+*I *157:D I *D sky130_fd_sc_hd__dfxtp_1
+*I *160:X O *D sky130_fd_sc_hd__clkbuf_1
+*CAP
+1 *157:D 0.00114339
+2 *160:X 0.00114339
+*RES
+1 *160:X *157:D 24.7687 
+*END
+
+*D_NET *10 0.000901802
+*CONN
+*I *158:A I *D sky130_fd_sc_hd__clkbuf_1
+*I *161:X O *D sky130_fd_sc_hd__clkbuf_1
+*CAP
+1 *158:A 0.000450901
+2 *161:X 0.000450901
+*RES
+1 *161:X *158:A 13.62 
+*END
+
+*D_NET *11 0.000382686
+*CONN
+*I *162:A I *D sky130_fd_sc_hd__buf_2
+*I *157:Q O *D sky130_fd_sc_hd__dfxtp_1
+*CAP
+1 *162:A 0.000167736
+2 *157:Q 0.000167736
+3 ccff_tail *162:A 4.72134e-05
+*RES
+1 *157:Q *162:A 9.735 
+*END
+
+*D_NET *12 0.000970013
+*CONN
+*I *163:A I *D sky130_fd_sc_hd__clkbuf_4
+*I *158:X O *D sky130_fd_sc_hd__clkbuf_1
+*CAP
+1 *163:A 0.000485006
+2 *158:X 0.000485006
+3 gfpga_pad_GPIO_PAD *163:A 0
+*RES
+1 *158:X *163:A 12.57 
+*END

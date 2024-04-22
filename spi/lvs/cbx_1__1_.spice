@@ -1,0 +1,481 @@
+* NGSPICE file created from cbx_1__1_.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
+.subckt sky130_fd_sc_hd__fill_2 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_ef_sc_hd__decap_12 abstract view
+.subckt sky130_ef_sc_hd__decap_12 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
+.subckt sky130_fd_sc_hd__fill_1 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__inv_2 abstract view
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__ebufn_1 abstract view
+.subckt sky130_fd_sc_hd__ebufn_1 A TE_B VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_1 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_1 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_4 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_4 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dlygate4sd3_1 abstract view
+.subckt sky130_fd_sc_hd__dlygate4sd3_1 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
+.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__ebufn_2 abstract view
+.subckt sky130_fd_sc_hd__ebufn_2 A TE_B VGND VNB VPB VPWR Z
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__conb_1 abstract view
+.subckt sky130_fd_sc_hd__conb_1 VGND VNB VPB VPWR HI LO
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_16 abstract view
+.subckt sky130_fd_sc_hd__clkbuf_16 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__buf_1 abstract view
+.subckt sky130_fd_sc_hd__buf_1 A VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dfxtp_1 abstract view
+.subckt sky130_fd_sc_hd__dfxtp_1 CLK D VGND VNB VPB VPWR Q
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
+.subckt sky130_fd_sc_hd__decap_6 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
+.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__dfxtp_2 abstract view
+.subckt sky130_fd_sc_hd__dfxtp_2 CLK D VGND VNB VPB VPWR Q
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
+.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__diode_2 abstract view
+.subckt sky130_fd_sc_hd__diode_2 DIODE VGND VNB VPB VPWR
+.ends
+
+.subckt cbx_1__1_ bottom_grid_top_width_0_height_0_subtile_0__pin_I_0_ bottom_grid_top_width_0_height_0_subtile_0__pin_I_4_
++ bottom_grid_top_width_0_height_0_subtile_0__pin_I_8_ ccff_head ccff_tail chanx_left_in[0]
++ chanx_left_in[1] chanx_left_in[2] chanx_left_in[3] chanx_left_in[4] chanx_left_in[5]
++ chanx_left_in[6] chanx_left_in[7] chanx_left_in[8] chanx_left_out[0] chanx_left_out[1]
++ chanx_left_out[2] chanx_left_out[3] chanx_left_out[4] chanx_left_out[5] chanx_left_out[6]
++ chanx_left_out[7] chanx_left_out[8] chanx_right_in[0] chanx_right_in[1] chanx_right_in[2]
++ chanx_right_in[3] chanx_right_in[4] chanx_right_in[5] chanx_right_in[6] chanx_right_in[7]
++ chanx_right_in[8] chanx_right_out[0] chanx_right_out[1] chanx_right_out[2] chanx_right_out[3]
++ chanx_right_out[4] chanx_right_out[5] chanx_right_out[6] chanx_right_out[7] chanx_right_out[8]
++ prog_clk top_grid_bottom_width_0_height_0_subtile_0__pin_I_2_ top_grid_bottom_width_0_height_0_subtile_0__pin_I_6_
++ vdd vss
+XFILLER_0_13_95 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_13_73 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_10_41 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_9_49 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_9_27 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+X_131_ net23 vss vss vdd vdd _052_ sky130_fd_sc_hd__inv_2
+X_200_ mux_bottom_ipin_0.INVTX1_3_.out _051_ vss vss vdd vdd mux_top_ipin_2.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_062_ net23 vss vss vdd vdd _015_ sky130_fd_sc_hd__clkbuf_1
+X_114_ net15 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_3_.out sky130_fd_sc_hd__inv_2
+Xoutput42 net42 vss vss vdd vdd top_grid_bottom_width_0_height_0_subtile_0__pin_I_2_
++ sky130_fd_sc_hd__clkbuf_4
+Xoutput31 net31 vss vss vdd vdd chanx_left_out[7] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_7_60 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xoutput20 net20 vss vss vdd vdd bottom_grid_top_width_0_height_0_subtile_0__pin_I_0_
++ sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_13_85 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_13_63 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_13_52 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_13_41 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_4_50 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_130_ mux_top_ipin_2.mux_l2_in_0_.TGATE_0_.out vss vss vdd vdd net22 sky130_fd_sc_hd__inv_2
+X_113_ net10 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_4_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_10_53 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_061_ _014_ vss vss vdd vdd _051_ sky130_fd_sc_hd__clkbuf_1
+Xoutput32 net32 vss vss vdd vdd chanx_left_out[8] sky130_fd_sc_hd__clkbuf_4
+Xoutput43 net43 vss vss vdd vdd top_grid_bottom_width_0_height_0_subtile_0__pin_I_6_
++ sky130_fd_sc_hd__clkbuf_4
+Xoutput21 net21 vss vss vdd vdd bottom_grid_top_width_0_height_0_subtile_0__pin_I_4_
++ sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_1_95 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_11_6 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XFILLER_0_2_9 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_060_ mem_top_ipin_2.DFF_0_.Q vss vss vdd vdd _014_ sky130_fd_sc_hd__clkbuf_1
+X_189_ mux_top_ipin_0.INVTX1_2_.out _040_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_112_ mux_bottom_ipin_0.mux_l3_in_0_.TGATE_0_.out vss vss vdd vdd net42 sky130_fd_sc_hd__inv_2
+Xhold10 mem_top_ipin_0.DFF_1_.Q vss vss vdd vdd net58 sky130_fd_sc_hd__dlygate4sd3_1
+Xoutput33 net33 vss vss vdd vdd chanx_right_out[0] sky130_fd_sc_hd__clkbuf_4
+Xoutput22 net22 vss vss vdd vdd bottom_grid_top_width_0_height_0_subtile_0__pin_I_8_
++ sky130_fd_sc_hd__clkbuf_4
+X_111_ _013_ vss vss vdd vdd _018_ sky130_fd_sc_hd__clkbuf_1
+X_188_ mux_top_ipin_0.INVTX1_4_.out _039_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_2_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+Xoutput23 net23 vss vss vdd vdd ccff_tail sky130_fd_sc_hd__clkbuf_4
+Xhold11 mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd net59 sky130_fd_sc_hd__dlygate4sd3_1
+Xoutput34 net34 vss vss vdd vdd chanx_right_out[1] sky130_fd_sc_hd__clkbuf_4
+X_187_ mux_top_ipin_0.mux_l1_in_0_.TGATE_0_.out _038_ vss vss vdd vdd mux_top_ipin_0.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_110_ mem_bottom_ipin_0.DFF_1_.Q vss vss vdd vdd _013_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_1_54 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xoutput24 net24 vss vss vdd vdd chanx_left_out[0] sky130_fd_sc_hd__clkbuf_4
+Xoutput35 net35 vss vss vdd vdd chanx_right_out[2] sky130_fd_sc_hd__clkbuf_4
+X_186_ mux_top_ipin_0.mux_l1_in_2_.TGATE_0_.out _037_ vss vss vdd vdd mux_top_ipin_0.mux_l2_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_169_ mux_bottom_ipin_0.mux_l2_in_1_.TGATE_0_.out _020_ vss vss vdd vdd mux_bottom_ipin_0.mux_l3_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+Xoutput25 net25 vss vss vdd vdd chanx_left_out[1] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_9_6 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_0 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+Xoutput36 net36 vss vss vdd vdd chanx_right_out[3] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_4_99 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_185_ mux_top_ipin_0.mux_l2_in_0_.TGATE_0_.out _036_ vss vss vdd vdd mux_top_ipin_0.mux_l3_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_2
+X_168_ mux_bottom_ipin_0.INVTX1_1_.out _019_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_099_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _025_ sky130_fd_sc_hd__inv_2
+Xoutput26 net26 vss vss vdd vdd chanx_left_out[2] sky130_fd_sc_hd__clkbuf_4
+Xoutput37 net37 vss vss vdd vdd chanx_right_out[4] sky130_fd_sc_hd__clkbuf_4
+XPHY_1 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_191__46 vss vss vdd vdd net46 _191__46/LO sky130_fd_sc_hd__conb_1
+XFILLER_0_7_99 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_184_ mux_bottom_ipin_1.INVTX1_1_.out _035_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_167_ net44 _018_ vss vss vdd vdd mux_bottom_ipin_0.mux_l2_in_1_.TGATE_0_.out sky130_fd_sc_hd__ebufn_1
+X_098_ _008_ vss vss vdd vdd _023_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_13_48 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+Xoutput27 net27 vss vss vdd vdd chanx_left_out[3] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_13_37 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+XFILLER_0_13_26 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_167__44 vss vss vdd vdd net44 _167__44/LO sky130_fd_sc_hd__conb_1
+XFILLER_0_7_89 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_2 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+Xoutput38 net38 vss vss vdd vdd chanx_right_out[5] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_10_16 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+X_097_ mem_bottom_ipin_0.DFF_1_.Q vss vss vdd vdd _008_ sky130_fd_sc_hd__clkbuf_1
+X_183_ mux_top_ipin_0.INVTX1_3_.out _034_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XFILLER_0_1_36 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_166_ net2 vss vss vdd vdd net33 sky130_fd_sc_hd__clkbuf_1
+X_149_ net19 vss vss vdd vdd net32 sky130_fd_sc_hd__clkbuf_1
+Xoutput28 net28 vss vss vdd vdd chanx_left_out[4] sky130_fd_sc_hd__clkbuf_4
+Xoutput39 net39 vss vss vdd vdd chanx_right_out[6] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_7_68 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XPHY_3 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_182_ mux_top_ipin_0.INVTX1_5_.out _033_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_2_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_165_ net3 vss vss vdd vdd net34 sky130_fd_sc_hd__clkbuf_1
+X_096_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _024_ sky130_fd_sc_hd__inv_2
+XFILLER_0_1_15 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xoutput29 net29 vss vss vdd vdd chanx_left_out[5] sky130_fd_sc_hd__clkbuf_4
+XPHY_4 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_079_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _002_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_10_29 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+X_095_ mem_bottom_ipin_0.DFF_1_.Q vss vss vdd vdd _027_ sky130_fd_sc_hd__inv_2
+X_164_ net4 vss vss vdd vdd net35 sky130_fd_sc_hd__clkbuf_1
+X_181_ mux_top_ipin_0.mux_l1_in_1_.TGATE_0_.out _032_ vss vss vdd vdd mux_top_ipin_0.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XFILLER_0_11_94 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_078_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _041_ sky130_fd_sc_hd__inv_2
+XFILLER_0_13_29 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_13_18 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XPHY_5 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_180_ net45 _031_ vss vss vdd vdd mux_top_ipin_0.mux_l2_in_1_.TGATE_0_.out sky130_fd_sc_hd__ebufn_1
+XFILLER_0_11_73 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_163_ net5 vss vss vdd vdd net36 sky130_fd_sc_hd__clkbuf_1
+X_094_ mem_bottom_ipin_0.DFF_2_.Q vss vss vdd vdd _029_ sky130_fd_sc_hd__inv_2
+X_077_ mem_top_ipin_0.DFF_1_.Q vss vss vdd vdd _038_ sky130_fd_sc_hd__inv_2
+X_129_ net14 vss vss vdd vdd mux_top_ipin_1.INVTX1_1_.out sky130_fd_sc_hd__inv_2
+XPHY_6 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_093_ _007_ vss vss vdd vdd _031_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_3_3 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_162_ net6 vss vss vdd vdd net37 sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_11_30 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+Xinput1 ccff_head vss vss vdd vdd net1 sky130_fd_sc_hd__clkbuf_1
+Xclkbuf_0_prog_clk prog_clk vss vss vdd vdd clknet_0_prog_clk sky130_fd_sc_hd__clkbuf_16
+X_076_ mem_top_ipin_0.DFF_2_.Q vss vss vdd vdd _036_ sky130_fd_sc_hd__inv_2
+XFILLER_0_2_83 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_059_ mem_top_ipin_2.DFF_0_.Q vss vss vdd vdd _053_ sky130_fd_sc_hd__inv_2
+X_128_ net5 vss vss vdd vdd mux_top_ipin_1.INVTX1_0_.out sky130_fd_sc_hd__inv_2
+XPHY_7 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_4_29 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_11_42 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+X_161_ net7 vss vss vdd vdd net38 sky130_fd_sc_hd__clkbuf_1
+Xinput2 chanx_left_in[0] vss vss vdd vdd net2 sky130_fd_sc_hd__buf_1
+X_092_ mem_top_ipin_0.DFF_1_.Q vss vss vdd vdd _007_ sky130_fd_sc_hd__clkbuf_1
+X_075_ _001_ vss vss vdd vdd _042_ sky130_fd_sc_hd__clkbuf_1
+XPHY_8 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_127_ mux_top_ipin_1.mux_l2_in_0_.TGATE_0_.out vss vss vdd vdd net21 sky130_fd_sc_hd__inv_2
+XFILLER_0_11_101 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_11_54 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_091_ _006_ vss vss vdd vdd _033_ sky130_fd_sc_hd__clkbuf_1
+X_074_ mem_bottom_ipin_1.DFF_1_.Q vss vss vdd vdd _001_ sky130_fd_sc_hd__clkbuf_1
+Xinput3 chanx_left_in[1] vss vss vdd vdd net3 sky130_fd_sc_hd__buf_1
+X_143_ clknet_1_1__leaf_prog_clk net53 vss vss vdd vdd mem_top_ipin_2.DFF_0_.Q sky130_fd_sc_hd__dfxtp_1
+X_160_ net8 vss vss vdd vdd net39 sky130_fd_sc_hd__clkbuf_1
+XPHY_9 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_2_52 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_2_63 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_126_ net12 vss vss vdd vdd mux_bottom_ipin_1.INVTX1_1_.out sky130_fd_sc_hd__inv_2
+X_109_ _012_ vss vss vdd vdd _019_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_8_40 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_5_9 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_11_66 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_090_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _006_ sky130_fd_sc_hd__clkbuf_1
+Xinput4 chanx_left_in[2] vss vss vdd vdd net4 sky130_fd_sc_hd__buf_1
+X_073_ _000_ vss vss vdd vdd _043_ sky130_fd_sc_hd__clkbuf_1
+X_142_ clknet_1_1__leaf_prog_clk net51 vss vss vdd vdd net23 sky130_fd_sc_hd__dfxtp_1
+X_125_ net3 vss vss vdd vdd mux_bottom_ipin_1.INVTX1_0_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_8_63 vss vss vdd vdd sky130_fd_sc_hd__decap_6
+X_108_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _012_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_0_102 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XTAP_50 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_072_ mem_bottom_ipin_1.DFF_0_.Q vss vss vdd vdd _000_ sky130_fd_sc_hd__clkbuf_1
+Xinput5 chanx_left_in[3] vss vss vdd vdd net5 sky130_fd_sc_hd__buf_1
+X_141_ clknet_1_1__leaf_prog_clk net49 vss vss vdd vdd mem_top_ipin_1.DFF_0_.Q sky130_fd_sc_hd__dfxtp_1
+X_124_ mux_bottom_ipin_1.mux_l2_in_0_.TGATE_0_.out vss vss vdd vdd net43 sky130_fd_sc_hd__inv_2
+X_107_ _011_ vss vss vdd vdd _022_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_11_57 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XTAP_51 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+Xinput6 chanx_left_in[4] vss vss vdd vdd net6 sky130_fd_sc_hd__buf_1
+XTAP_40 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_071_ mem_bottom_ipin_1.DFF_0_.Q vss vss vdd vdd _045_ sky130_fd_sc_hd__inv_2
+X_140_ clknet_1_1__leaf_prog_clk net54 vss vss vdd vdd mem_top_ipin_1.DFF_1_.Q sky130_fd_sc_hd__dfxtp_1
+X_106_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _011_ sky130_fd_sc_hd__clkbuf_1
+X_123_ net17 vss vss vdd vdd mux_top_ipin_0.INVTX1_5_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_12_6 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xinput7 chanx_left_in[5] vss vss vdd vdd net7 sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_10_3 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XTAP_41 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_070_ mem_bottom_ipin_1.DFF_1_.Q vss vss vdd vdd _044_ sky130_fd_sc_hd__inv_2
+XTAP_30 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+Xinput10 chanx_left_in[8] vss vss vdd vdd net10 sky130_fd_sc_hd__buf_1
+X_199_ net48 _050_ vss vss vdd vdd mux_top_ipin_2.mux_l2_in_0_.TGATE_0_.out sky130_fd_sc_hd__ebufn_1
+X_122_ net4 vss vss vdd vdd mux_top_ipin_0.INVTX1_2_.out sky130_fd_sc_hd__inv_2
+X_105_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _026_ sky130_fd_sc_hd__inv_2
+XFILLER_0_8_77 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xinput8 chanx_left_in[6] vss vss vdd vdd net8 sky130_fd_sc_hd__buf_1
+XTAP_42 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+Xclkbuf_1_1__f_prog_clk clknet_0_prog_clk vss vss vdd vdd clknet_1_1__leaf_prog_clk
++ sky130_fd_sc_hd__clkbuf_16
+XTAP_31 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_198_ mux_top_ipin_1.INVTX1_0_.out _049_ vss vss vdd vdd mux_top_ipin_1.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+Xinput11 chanx_right_in[0] vss vss vdd vdd net11 sky130_fd_sc_hd__buf_1
+X_104_ mem_bottom_ipin_0.DFF_1_.Q vss vss vdd vdd _028_ sky130_fd_sc_hd__inv_2
+X_121_ net13 vss vss vdd vdd mux_top_ipin_0.INVTX1_3_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_8_23 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xclkbuf_1_0__f_prog_clk clknet_0_prog_clk vss vss vdd vdd clknet_1_0__leaf_prog_clk
++ sky130_fd_sc_hd__clkbuf_16
+Xinput9 chanx_left_in[7] vss vss vdd vdd net9 sky130_fd_sc_hd__clkbuf_1
+XTAP_43 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_5_68 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_5_46 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XTAP_32 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_6_101 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_120_ net8 vss vss vdd vdd mux_top_ipin_0.INVTX1_4_.out sky130_fd_sc_hd__inv_2
+Xinput12 chanx_right_in[1] vss vss vdd vdd net12 sky130_fd_sc_hd__buf_1
+X_197_ mux_top_ipin_1.mux_l1_in_0_.TGATE_0_.out _048_ vss vss vdd vdd mux_top_ipin_1.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_2
+X_103_ _010_ vss vss vdd vdd _020_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_0_91 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xhold1 mem_top_ipin_0.DFF_2_.Q vss vss vdd vdd net49 sky130_fd_sc_hd__dlygate4sd3_1
+XTAP_44 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_196_ mux_top_ipin_1.INVTX1_1_.out _047_ vss vss vdd vdd mux_top_ipin_1.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XTAP_33 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_102_ mem_bottom_ipin_0.DFF_2_.Q vss vss vdd vdd _010_ sky130_fd_sc_hd__clkbuf_1
+Xinput13 chanx_right_in[2] vss vss vdd vdd net13 sky130_fd_sc_hd__buf_1
+X_179_ mux_top_ipin_0.mux_l2_in_1_.TGATE_0_.out _030_ vss vss vdd vdd mux_top_ipin_0.mux_l3_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_2
+Xhold2 mem_bottom_ipin_1.DFF_1_.Q vss vss vdd vdd net50 sky130_fd_sc_hd__dlygate4sd3_1
+XFILLER_0_11_18 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+XTAP_45 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_8_3 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XTAP_34 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_12_83 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_195_ net47 _046_ vss vss vdd vdd mux_top_ipin_1.mux_l2_in_0_.TGATE_0_.out sky130_fd_sc_hd__ebufn_2
+Xinput14 chanx_right_in[3] vss vss vdd vdd net14 sky130_fd_sc_hd__buf_1
+X_178_ mux_bottom_ipin_0.mux_l2_in_0_.TGATE_0_.out _029_ vss vss vdd vdd mux_bottom_ipin_0.mux_l3_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_101_ _009_ vss vss vdd vdd _021_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_10_8 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_5_27 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xhold3 mem_top_ipin_2.DFF_0_.Q vss vss vdd vdd net51 sky130_fd_sc_hd__dlygate4sd3_1
+XFILLER_0_0_82 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XTAP_46 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_194_ mux_bottom_ipin_1.INVTX1_0_.out _045_ vss vss vdd vdd mux_bottom_ipin_1.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XTAP_35 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_177_ mux_bottom_ipin_0.mux_l1_in_2_.TGATE_0_.out _028_ vss vss vdd vdd mux_bottom_ipin_0.mux_l2_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_100_ mem_bottom_ipin_0.DFF_0_.Q vss vss vdd vdd _009_ sky130_fd_sc_hd__clkbuf_1
+Xinput15 chanx_right_in[4] vss vss vdd vdd net15 sky130_fd_sc_hd__buf_1
+Xhold4 mem_bottom_ipin_1.DFF_0_.Q vss vss vdd vdd net52 sky130_fd_sc_hd__dlygate4sd3_1
+XTAP_47 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_36 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_0_72 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_20 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_9_102 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_193_ mux_bottom_ipin_1.mux_l1_in_0_.TGATE_0_.out _044_ vss vss vdd vdd mux_bottom_ipin_1.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_159_ net9 vss vss vdd vdd net40 sky130_fd_sc_hd__clkbuf_1
+X_176_ mux_bottom_ipin_0.mux_l1_in_0_.TGATE_0_.out _027_ vss vss vdd vdd mux_bottom_ipin_0.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+Xinput16 chanx_right_in[5] vss vss vdd vdd net16 sky130_fd_sc_hd__clkbuf_1
+Xhold5 mem_top_ipin_1.DFF_1_.Q vss vss vdd vdd net53 sky130_fd_sc_hd__dlygate4sd3_1
+XTAP_48 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_21 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_6_83 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_6_3 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XTAP_37 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_192_ mux_bottom_ipin_1.INVTX1_1_.out _043_ vss vss vdd vdd mux_bottom_ipin_1.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XPHY_10 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_175_ mux_bottom_ipin_0.INVTX1_4_.out _026_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_2_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XFILLER_0_10_101 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+Xinput17 chanx_right_in[6] vss vss vdd vdd net17 sky130_fd_sc_hd__buf_1
+XFILLER_0_3_95 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_089_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _039_ sky130_fd_sc_hd__inv_2
+Xhold6 mem_top_ipin_1.DFF_0_.Q vss vss vdd vdd net54 sky130_fd_sc_hd__dlygate4sd3_1
+X_158_ net10 vss vss vdd vdd net41 sky130_fd_sc_hd__clkbuf_1
+XTAP_49 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_38 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_22 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_191_ net46 _042_ vss vss vdd vdd mux_bottom_ipin_1.mux_l2_in_0_.TGATE_0_.out sky130_fd_sc_hd__ebufn_1
+XPHY_11 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_157_ net11 vss vss vdd vdd net24 sky130_fd_sc_hd__clkbuf_1
+Xinput18 chanx_right_in[7] vss vss vdd vdd net18 sky130_fd_sc_hd__clkbuf_1
+X_174_ mux_bottom_ipin_0.INVTX1_2_.out _025_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_088_ mem_top_ipin_0.DFF_1_.Q vss vss vdd vdd _037_ sky130_fd_sc_hd__inv_2
+XFILLER_0_3_52 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_3_74 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xhold7 mem_bottom_ipin_0.DFF_2_.Q vss vss vdd vdd net55 sky130_fd_sc_hd__dlygate4sd3_1
+XTAP_39 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_0_6_74 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_12 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XTAP_28 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+Xinput19 chanx_right_in[8] vss vss vdd vdd net19 sky130_fd_sc_hd__buf_1
+XFILLER_0_12_33 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XPHY_23 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_173_ mux_bottom_ipin_0.INVTX1_0_.out _024_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_190_ mux_bottom_ipin_1.INVTX1_0_.out _041_ vss vss vdd vdd mux_top_ipin_0.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+Xhold8 mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd net56 sky130_fd_sc_hd__dlygate4sd3_1
+X_180__45 vss vss vdd vdd net45 _180__45/LO sky130_fd_sc_hd__conb_1
+X_087_ _005_ vss vss vdd vdd _030_ sky130_fd_sc_hd__clkbuf_1
+X_156_ net12 vss vss vdd vdd net25 sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_3_42 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_9_41 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_139_ clknet_1_0__leaf_prog_clk net55 vss vss vdd vdd mem_bottom_ipin_1.DFF_0_.Q
++ sky130_fd_sc_hd__dfxtp_1
+XPHY_24 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_13 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_199__48 vss vss vdd vdd net48 _199__48/LO sky130_fd_sc_hd__conb_1
+XTAP_29 vss vdd sky130_fd_sc_hd__tapvpwrvgnd_1
+X_155_ net13 vss vss vdd vdd net26 sky130_fd_sc_hd__clkbuf_1
+X_172_ mux_bottom_ipin_0.mux_l1_in_1_.TGATE_0_.out _023_ vss vss vdd vdd mux_bottom_ipin_0.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_086_ mem_top_ipin_0.DFF_2_.Q vss vss vdd vdd _005_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_3_65 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+Xhold9 mem_bottom_ipin_0.DFF_1_.Q vss vss vdd vdd net57 sky130_fd_sc_hd__dlygate4sd3_1
+XFILLER_0_9_31 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_138_ clknet_1_0__leaf_prog_clk net52 vss vss vdd vdd mem_bottom_ipin_1.DFF_1_.Q
++ sky130_fd_sc_hd__dfxtp_1
+XFILLER_0_0_55 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_069_ _017_ vss vss vdd vdd _046_ sky130_fd_sc_hd__buf_1
+XPHY_25 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_57 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_12_13 vss vss vdd vdd sky130_ef_sc_hd__decap_12
+X_171_ mux_bottom_ipin_0.INVTX1_5_.out _022_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_2_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+XPHY_14 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_154_ net14 vss vss vdd vdd net27 sky130_fd_sc_hd__clkbuf_1
+X_085_ _004_ vss vss vdd vdd _034_ sky130_fd_sc_hd__clkbuf_1
+X_137_ clknet_1_0__leaf_prog_clk net50 vss vss vdd vdd mem_top_ipin_0.DFF_0_.Q sky130_fd_sc_hd__dfxtp_2
+X_068_ mem_top_ipin_1.DFF_1_.Q vss vss vdd vdd _017_ sky130_fd_sc_hd__clkbuf_1
+XPHY_26 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_25 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XPHY_15 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_170_ mux_bottom_ipin_0.INVTX1_3_.out _021_ vss vss vdd vdd mux_bottom_ipin_0.mux_l1_in_1_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_153_ net15 vss vss vdd vdd net28 sky130_fd_sc_hd__clkbuf_1
+X_136_ clknet_1_0__leaf_prog_clk net56 vss vss vdd vdd mem_top_ipin_0.DFF_1_.Q sky130_fd_sc_hd__dfxtp_1
+X_084_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _004_ sky130_fd_sc_hd__clkbuf_1
+X_067_ _016_ vss vss vdd vdd _047_ sky130_fd_sc_hd__clkbuf_1
+X_119_ mux_top_ipin_0.mux_l3_in_0_.TGATE_0_.out vss vss vdd vdd net20 sky130_fd_sc_hd__inv_2
+XPHY_27 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_12_48 vss vss vdd vdd sky130_fd_sc_hd__decap_6
+XFILLER_0_12_37 vss vss vdd vdd sky130_fd_sc_hd__decap_8
+XPHY_16 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XFILLER_0_2_3 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+X_152_ net16 vss vss vdd vdd net29 sky130_fd_sc_hd__clkbuf_1
+X_083_ mem_top_ipin_0.DFF_0_.Q vss vss vdd vdd _040_ sky130_fd_sc_hd__inv_2
+X_118_ net19 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_5_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_10_70 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+XFILLER_0_9_45 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+X_135_ clknet_1_0__leaf_prog_clk net58 vss vss vdd vdd mem_top_ipin_0.DFF_2_.Q sky130_fd_sc_hd__dfxtp_1
+X_066_ mem_top_ipin_1.DFF_0_.Q vss vss vdd vdd _016_ sky130_fd_sc_hd__clkbuf_1
+XPHY_17 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+XANTENNA_1 chanx_right_in[2] vss vss vdd vdd sky130_fd_sc_hd__diode_2
+X_134_ clknet_1_1__leaf_prog_clk net1 vss vss vdd vdd mem_bottom_ipin_0.DFF_0_.Q sky130_fd_sc_hd__dfxtp_2
+X_151_ net17 vss vss vdd vdd net30 sky130_fd_sc_hd__clkbuf_1
+X_082_ _003_ vss vss vdd vdd _032_ sky130_fd_sc_hd__clkbuf_1
+X_065_ mem_top_ipin_1.DFF_0_.Q vss vss vdd vdd _049_ sky130_fd_sc_hd__inv_2
+XFILLER_0_9_68 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+XFILLER_0_9_35 vss vss vdd vdd sky130_fd_sc_hd__decap_6
+X_117_ net11 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_1_.out sky130_fd_sc_hd__inv_2
+XPHY_18 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_150_ net18 vss vss vdd vdd net31 sky130_fd_sc_hd__clkbuf_1
+X_081_ mem_top_ipin_0.DFF_1_.Q vss vss vdd vdd _003_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_10_83 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_133_ clknet_1_1__leaf_prog_clk net59 vss vss vdd vdd mem_bottom_ipin_0.DFF_1_.Q
++ sky130_fd_sc_hd__dfxtp_1
+X_202_ mux_bottom_ipin_0.INVTX1_2_.out _053_ vss vss vdd vdd mux_top_ipin_2.mux_l1_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_064_ mem_top_ipin_1.DFF_1_.Q vss vss vdd vdd _048_ sky130_fd_sc_hd__inv_2
+XPHY_19 vss vss vdd vdd sky130_fd_sc_hd__decap_3
+X_116_ net2 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_0_.out sky130_fd_sc_hd__inv_2
+XFILLER_0_12_29 vss vss vdd vdd sky130_fd_sc_hd__decap_4
+Xoutput40 net40 vss vss vdd vdd chanx_right_out[7] sky130_fd_sc_hd__clkbuf_4
+X_132_ clknet_1_1__leaf_prog_clk net57 vss vss vdd vdd mem_bottom_ipin_0.DFF_2_.Q
++ sky130_fd_sc_hd__dfxtp_1
+X_201_ mux_top_ipin_2.mux_l1_in_0_.TGATE_0_.out _052_ vss vss vdd vdd mux_top_ipin_2.mux_l2_in_0_.TGATE_0_.out
++ sky130_fd_sc_hd__ebufn_1
+X_063_ _015_ vss vss vdd vdd _050_ sky130_fd_sc_hd__clkbuf_1
+X_080_ _002_ vss vss vdd vdd _035_ sky130_fd_sc_hd__clkbuf_1
+XFILLER_0_0_3 vss vss vdd vdd sky130_fd_sc_hd__fill_2
+X_115_ net6 vss vss vdd vdd mux_bottom_ipin_0.INVTX1_2_.out sky130_fd_sc_hd__inv_2
+Xoutput30 net30 vss vss vdd vdd chanx_left_out[6] sky130_fd_sc_hd__clkbuf_4
+XFILLER_0_8_102 vss vss vdd vdd sky130_fd_sc_hd__fill_1
+X_195__47 vss vss vdd vdd net47 _195__47/LO sky130_fd_sc_hd__conb_1
+Xoutput41 net41 vss vss vdd vdd chanx_right_out[8] sky130_fd_sc_hd__clkbuf_4
+.ends
+

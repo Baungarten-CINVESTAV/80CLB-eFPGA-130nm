@@ -23,7 +23,19 @@
 		"$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"
 	],
 	"LVS_VERILOG_FILES": [
-		"$UPRJ_ROOT/verilog/gl/user_proj_example.v",
+                "$UPRJ_ROOT/verilog/gl/cbx_*_.v",
+                "$UPRJ_ROOT/verilog/gl/cby_*_.v",
+                "$UPRJ_ROOT/verilog/gl/grid_clb.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_bottom.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_left.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_right.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_top.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_bottom_out.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_left_out.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_right_out.v",
+                "$UPRJ_ROOT/verilog/gl/grid_io_top_out.v",
+                "$UPRJ_ROOT/verilog/gl/sb_*_.v",
+                "$UPRJ_ROOT/verilog/gl/ioenb.v",
 		"$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
 	],
 	"LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
