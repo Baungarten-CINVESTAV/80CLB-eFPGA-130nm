@@ -1,0 +1,5 @@
+cin 0
+a 3
+b 3
+cout 0
+sum 3

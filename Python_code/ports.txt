@@ -1,0 +1,8 @@
+clk 0
+reset 0
+load_i 0
+decrypt_i 0
+data_i 127
+key_i 127
+ready_o 0
+data_o 127
